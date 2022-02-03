@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>This is HTML page</title>
+    <style>
+        .grid-container {
+            background-color: rgb(106, 226, 190);
+            padding: 20px;
+            display: grid;
+            grid-template-areas: 'header header header header header header header header ' 'menu1 menu1 menu1 menu1 menu2 menu2 menu2 menu2' 'sidebar-left sidebar-left main-content  main-content main-content  main-content sidebar-right sidebar-right' 'footer footer footer footer footer footer footer footer';
+            grid-gap: 10px;
+        }
+        
+        .grid-item {
+            background-color: rgb(218, 134, 152);
+            border: 1px solid black;
+            padding: 20px;
+            font-size: 40px;
+            text-align: center;
+            color: white;
+        }
+        
+        #grid-1 {
+            grid-area: header;
+        }
+        
+        #grid-2 {
+            grid-area: menu1;
+        }
+        
+        #grid-3 {
+            grid-area: menu2;
+        }
+        
+        #grid-4 {
+            grid-area: sidebar-left;
+        }
+        
+        #grid-5 {
+            grid-area: main-content;
+        }
+        
+        #grid-6 {
+            grid-area: sidebar-right;
+        }
+        
+        #grid-7 {
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-item" id="grid-1">Header</div>
+        <div class="grid-item" id="grid-2">Menu 1</div>
+        <div class="grid-item" id="grid-3">Menu 2</div>
+        <div class="grid-item" id="grid-4">Sidebar Left</div>
+        <div class="grid-item" id="grid-5">Main content</div>
+        <div class="grid-item" id="grid-6">Sidebar Right</div>
+        <div class="grid-item" id="grid-7">Footer</div>
+
+    </div>
+
+</body>
+
+</html>
